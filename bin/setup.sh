@@ -1,6 +1,3 @@
-. /software/ics_launch/bin/setup.sh
-setup tron_actorcore
-
 LOGROOT=/data/logs/scripts
 
 function now () {
