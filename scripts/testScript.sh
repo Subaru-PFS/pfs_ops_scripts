@@ -2,4 +2,10 @@
 #
 echo args: "$@"
 echo PATH=$PATH
+echo PYTHONPATH=$PYTHONPATH
 eups list -s
+
+python -V
+which python
+
+oneCmd.py hub actors
