@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Arrange to call a program, saving the output in a known directory
 #
 # callOpsScript scriptName [args]
