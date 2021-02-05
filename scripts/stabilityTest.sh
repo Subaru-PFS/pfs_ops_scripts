@@ -1,5 +1,5 @@
 #!/bin/bash
-export COMMENTS=F/3.38
+export COMMENTS=F/2.8
 
 oneCmd.py iic bias name=stabilityTest
 echo
