@@ -10,7 +10,7 @@ oneCmd.py iic dark exptime=300 specNum=$SPECNUM name=$NAME
 echo
 oneCmd.py iic scienceTrace halogen=30 arm=b specNum=$SPECNUM name=$NAME
 echo
-oneCmd.py iic bias specNum=$SPECNUM name=$NAME comments=$COMMENTS
+oneCmd.py iic bias specNum=$SPECNUM name=$NAME
 echo
 oneCmd.py iic scienceTrace halogen=3 arm=r specNum=$SPECNUM name=$NAME
 echo
