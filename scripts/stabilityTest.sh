@@ -1,21 +1,28 @@
 #!/bin/bash
+
+# user inputs
+export SPECNUM=3
+export NAME=stabilityTest
 export COMMENTS=
 
-oneCmd.py iic bias name=stabilityTest
+
+oneCmd.py iic bias specNum=$SPECNUM name=$NAME comments=$COMMENTS
 echo
-oneCmd.py iic dark exptime=300 name=stabilityTest
+oneCmd.py iic dark exptime=300 specNum=$SPECNUM name=$NAME comments=$COMMENTS
 echo
-oneCmd.py iic scienceTrace cam=b1 halogen=20.0 name=stabilityTest $COMMENTS
+oneCmd.py iic scienceTrace halogen=30 arm=b specNum=$SPECNUM name=$NAME comments=$COMMENTS
 echo
-oneCmd.py iic bias duplicate=2 name=stabilityTest
+oneCmd.py iic bias specNum=$SPECNUM name=$NAME comments=$COMMENTS
 echo
-oneCmd.py iic scienceTrace cam=r1 halogen=3.0 name=stabilityTest $COMMENTS
+oneCmd.py iic scienceTrace halogen=3 arm=r specNum=$SPECNUM name=$NAME comments=$COMMENTS
 echo
-oneCmd.py iic scienceArc argon=45 name=stabilityTest $COMMENTS
+oneCmd.py iic scienceArc argon=4 specNum=$SPECNUM name=$NAME comments=$COMMENTS
 echo
-oneCmd.py iic scienceArc neon=15 name=stabilityTest $COMMENTS
+oneCmd.py iic scienceArc neon=3 specNum=$SPECNUM name=$NAME comments=$COMMENTS
 echo
-oneCmd.py iic scienceArc krypton=45 name=stabilityTest $COMMENTS
+oneCmd.py iic scienceArc hgar=4 specNum=$SPECNUM name=$NAME comments=$COMMENTS
 echo
-oneCmd.py iic scienceArc hgar=5.0 name=stabilityTest $COMMENTS
+oneCmd.py iic scienceArc krypton=60 specNum=$SPECNUM name=$NAME comments=$COMMENTS
+echo
+oneCmd.py iic bias specNum=$SPECNUM name=$NAME comments=$COMMENTS
 echo
