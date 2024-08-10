@@ -14,7 +14,7 @@ oneCmd.py sps iis off=neon
 echo
 oneCmd.py sps iis on=krypton warmingTime=180
 echo
-oneCmd.py iic scienceArc exptime=1 duplicate=2 name=$NAME comments=$COMMENT
+oneCmd.py iic scienceArc exptime=60 duplicate=2 name=$NAME comments=$COMMENT
 echo
 oneCmd.py sps iis off=krypton
 echo
