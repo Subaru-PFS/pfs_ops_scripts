@@ -8,19 +8,19 @@ export COMMENT=stability
 
 oneCmd.py sps iis on=neon warmingTime=180
 echo
-oneCmd.py iic scienceArc exptime=1 duplicate=2 name=$NAME comments=$COMMENT CAM=$CAM
+oneCmd.py iic scienceArc exptime=1 duplicate=2 name=$NAME comments=$COMMENT
 echo
 oneCmd.py sps iis off=neon
 echo
 oneCmd.py sps iis on=krypton warmingTime=180
 echo
-oneCmd.py iic scienceArc exptime=1 duplicate=2 name=$NAME comments=$COMMENT CAM=$CAM
+oneCmd.py iic scienceArc exptime=60 duplicate=2 name=$NAME comments=$COMMENT
 echo
 oneCmd.py sps iis off=krypton
 echo
 oneCmd.py sps iis on=halogen warmingTime=180
 echo
-oneCmd.py iic scienceTrace exptime=20 noLampCtl duplicate=2 name=$NAME comments=$COMMENT CAM=$CAM
+oneCmd.py iic scienceTrace exptime=20 noLampCtl duplicate=2 name=$NAME comments=$COMMENT
 echo
 oneCmd.py sps iis off=halogen
 echo
