@@ -15,7 +15,7 @@ if [ ! -e "$file" ]; then
   exit 1
 fi
 
-PFS_INSTDATA_DIR="/software/devel/chyan/pfs_instdata"
+PFS_INSTDATA_DIR=$PFS_INSTDATA_DIR
 
 # Check if the destination directory exists
 if [ ! -d "$PFS_INSTDATA_DIR" ]; then
